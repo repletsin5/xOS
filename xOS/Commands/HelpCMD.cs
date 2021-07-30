@@ -13,12 +13,8 @@ namespace xOS.Commands
         /// <summary>
         /// info command
         /// </summary>
-        /// <param name="input"></param>
-        public static void RunHelpCMD(string input)
+        public static void RunHelpCMD()
         {
-            input = input.ToLower();
-            if (input == "help")
-            {
                 Console.WriteLine(@"
 List if commands that can be used on xOS:
     info - Displays this message
@@ -62,7 +58,7 @@ List if commands that can be used on xOS:
 
 ------------------------------------
 ");
-            }
+            
         }
     }
 }
